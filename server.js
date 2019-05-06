@@ -12,11 +12,7 @@ const port = 4000
 
 app.use(bodyParser());
 app.use(KoaStatic(__dirname + '/public'));
-
-
-
  
-
 app.use(router.routes())
    .use(router.allowedMethods());
 
