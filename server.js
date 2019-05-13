@@ -16,6 +16,7 @@ app.use(KoaStatic(__dirname + '/public'));
 app.use(router.routes())
    .use(router.allowedMethods());
 
-app.listen(port);
-
-console.log('GraphQL-demo server listen port: ' + port)
+app.listen(port,()=>{ 
+  console.log(`🚀 Server ready at http://localhost:${port}`) 
+})
+ 
